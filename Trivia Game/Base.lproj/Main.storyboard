@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KEj-7p-cfI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TriviaRock-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxD-sh-E3d">
+                                <rect key="frame" x="0.0" y="203" width="375" height="34"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-mU-Vq0">
+                                <rect key="frame" x="40" y="279" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <state key="normal" title="Choice 1">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOz-M7-Yen"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTr-gT-1DU">
+                                <rect key="frame" x="40" y="335" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <state key="normal" title="Choice 2"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijj-b8-hFz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVV-in-myv">
+                                <rect key="frame" x="40" y="396" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <state key="normal" title="Choice 3">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Heg-1A-V4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lh-cD-Liw">
+                                <rect key="frame" x="40" y="454" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <state key="normal" title="Choice 4">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0L-mU-hhn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iar-M6-Xfw">
+                                <rect key="frame" x="74" y="117" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kb-tx-hJL">
+                                <rect key="frame" x="16" y="116" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92572488624832538" green="0.92341965071969634" blue="0.86727127751060362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WxD-sh-E3d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BcB-DY-NJp"/>
+                            <constraint firstItem="WxD-sh-E3d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ciu-e8-tmN"/>
+                            <constraint firstItem="WxD-sh-E3d" firstAttribute="top" secondItem="iar-M6-Xfw" secondAttribute="bottom" constant="65" id="KOb-ll-yvt"/>
+                            <constraint firstItem="iar-M6-Xfw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Kd7-gc-4xm"/>
+                            <constraint firstItem="iar-M6-Xfw" firstAttribute="leading" secondItem="4kb-tx-hJL" secondAttribute="trailing" constant="8" id="MoB-1L-Pg5"/>
+                            <constraint firstItem="4kb-tx-hJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h3M-wR-YmE"/>
+                            <constraint firstItem="4kb-tx-hJL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="tFA-9a-bm4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TriviaRock" id="RCP-8c-u3z">
+                        <barButtonItem key="leftBarButtonItem" title="Add Question" id="rQj-f7-NI0">
+                            <connections>
+                                <segue destination="95V-FL-tGg" kind="show" id="U2T-us-95P"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="0Ok-PL-a1a">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jtw-sG-e7u">
+                                <rect key="frame" x="266" y="5.5" width="93" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Reset Game">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpB-AQ-B1L"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="choiceFour" destination="0lh-cD-Liw" id="jsi-UF-VGk"/>
+                        <outlet property="choiceOne" destination="eL2-mU-Vq0" id="n2F-3i-5Ev"/>
+                        <outlet property="choiceThree" destination="EVV-in-myv" id="XrW-va-3OI"/>
+                        <outlet property="choiceTwo" destination="oTr-gT-1DU" id="zk9-sv-RsL"/>
+                        <outlet property="questionLabel" destination="WxD-sh-E3d" id="mOM-1j-9OD"/>
+                        <outlet property="resetButton" destination="jtw-sG-e7u" id="Xbf-rp-h20"/>
+                        <outlet property="scoreLabe" destination="iar-M6-Xfw" id="BJE-fu-lHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Add Question View Controller-->
+        <scene sceneID="sMh-qp-q9p">
+            <objects>
+                <viewController id="95V-FL-tGg" customClass="addQuestionViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8N-mx-l6v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rBd-wy-72C">
+                                <rect key="frame" x="20" y="64" width="335" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-UM-8nl">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place Question Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAG-On-Mlv">
+                                        <rect key="frame" x="0.0" y="45" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="questionTextField:" destination="FJT-94-OmB" eventType="editingDidEnd" id="wrz-Hz-vIP"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tge-y0-v8H">
+                                        <rect key="frame" x="0.0" y="90" width="335" height="30"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnv-4r-A1c">
+                                        <rect key="frame" x="0.0" y="135" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beO-9K-hZ1">
+                                        <rect key="frame" x="0.0" y="180" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrI-ay-hQo">
+                                        <rect key="frame" x="0.0" y="225" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1u-fq-gqZ">
+                                        <rect key="frame" x="0.0" y="270" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3L1-kQ-k8H">
+                                        <rect key="frame" x="0.0" y="315" width="335" height="30"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ag1-5e-HE3">
+                                        <rect key="frame" x="0.0" y="360" width="335" height="31"/>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92572488620000004" green="0.92341965069999998" blue="0.86727127749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rBd-wy-72C" firstAttribute="top" secondItem="q4O-GM-Cfx" secondAttribute="top" id="FEZ-Fp-ORY"/>
+                            <constraint firstItem="rBd-wy-72C" firstAttribute="leading" secondItem="q4O-GM-Cfx" secondAttribute="leading" constant="20" id="dY0-6Y-he3"/>
+                            <constraint firstItem="q4O-GM-Cfx" firstAttribute="trailing" secondItem="rBd-wy-72C" secondAttribute="trailing" constant="20" id="umg-Xk-GCB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q4O-GM-Cfx"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vMJ-w0-X21">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="SLt-XW-Ovv">
+                            <connections>
+                                <action selector="submitButtonTapped:" destination="95V-FL-tGg" id="1Ls-8u-jjL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answer1Box" destination="cnv-4r-A1c" id="a31-k2-2lx"/>
+                        <outlet property="answer2Box" destination="beO-9K-hZ1" id="Qjk-Hq-C9V"/>
+                        <outlet property="answer3Box" destination="yrI-ay-hQo" id="4tf-aH-S5Q"/>
+                        <outlet property="answer4Box" destination="K1u-fq-gqZ" id="D8c-4t-VaV"/>
+                        <outlet property="correctAnswerSegmentedControl" destination="Ag1-5e-HE3" id="QCw-0o-7GH"/>
+                        <outlet property="questionAddBox" destination="OAG-On-Mlv" id="gR3-ne-noL"/>
+                        <segue destination="FJT-94-OmB" kind="unwind" identifier="unwindToQuiz Screen" unwindAction="unwindToQuizScreenWithSeque:" id="N9c-ik-g7V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xx-VU-8nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FJT-94-OmB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="258.62068965517244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bd3-lg-kG7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KEj-7p-cfI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JVY-j4-6ZG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KHS-j2-jKk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWM-ke-oDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="259"/>
+        </scene>
+    </scenes>
+</document>
